@@ -310,3 +310,38 @@ padding: 1em;
     }
 }
 
+.contacto {
+  display: flex;
+  flex-direction: row;
+  align-items:first baseline;
+  margin-top: 40px;
+  color: #00c896;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.mapa {
+    display: flex;
+    justify-content: center;
+    
+}
+iframe{
+    border-radius: 10px;
+    margin: 25px;
+
+   
+}
+
+textarea {
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+input {
+    margin-top: 3px;
+}
+
+p {
+    margin-top: 3px;;
+}
+
