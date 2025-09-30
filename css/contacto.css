@@ -76,20 +76,7 @@ body {
 }
 
 
-@media (max-width: 768px) {
-.navbar {
-  flex-direction: column;
 
-}
-
-.nav-links {
-  flex-direction: column;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  align-items: center;
-}
-
-}
 
 
 
@@ -235,6 +222,27 @@ p {
 form input,textarea {
   width: 90%;           /* ocupar todo el ancho */
   
+}
+
+}
+
+@media (max-width: 768px) {
+.navbar {
+  flex-direction: column;
+
+}
+
+.nav-links {
+
+  display: none;  
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  align-items: center;
+}
+
+.carrito {
+    display: none;
 }
 
 }
