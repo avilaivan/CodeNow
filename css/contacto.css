@@ -320,10 +320,16 @@ padding: 1em;
   align-items: stretch;
 }
 
+
+
+form input,textarea {
+  width: 80%;           /* ocupar todo el ancho */
+  
+}
+
 .mapa {
     display: flex;
     justify-content: center;
-    
 }
 iframe{
     border-radius: 10px;
@@ -345,7 +351,46 @@ p {
     margin-top: 3px;;
 }
 
-.cursojava{
-  background-color: #009e7a;
-  display: flex;
+.btn-submit:hover {
+    background-color: #121212; /* fondo oscuro */
+    color: #00c896; /* letras verdes */
+    border: 2px solid #00c896;
+    border-radius: 3px;
+    
+}
+
+.btn-submit {
+    background-color: #00c896; /* fondo oscuro */
+    color: white; /* letras verdes */
+    border: 2px solid #00c896;
+    border-radius: 3px;
+    width: 8em;
+    height: 3em;
+}
+
+.msj {
+  padding: 10px;
+}
+
+
+
+@media (max-width: 768px) {
+.contacto {
+  flex-direction: column;
+  
+}
+.contacto1 {
+  text-align: center;
+}
+
+.contacto2 {
+  padding-top: 20px;
+  text-align: center;
+}
+
+form input,textarea {
+  width: 90%;           /* ocupar todo el ancho */
+  
+}
+
 }
