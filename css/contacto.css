@@ -1,0 +1,351 @@
+/* Fuente principal local */
+@font-face {
+    font-family: 'MiFuente';
+    src: url('../font/NewakeFont-Demo.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Reset y tipografía global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'MiFuente', sans-serif;
+}
+
+body {
+    height: 100vh;
+    position: relative;
+    background-color: #272727; /* modo oscuro */
+    color: #f0f0f0; /* texto claro */
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: #1e1e1e; /* fondo oscuro */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+/* Logo botón a la izquierda */
+.logo-btn {
+    padding: 0.8em;
+    background-color: #00c896; /* verde */
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    font-family: 'MiFuente', sans-serif;
+}
+
+.logo-btn:hover {
+    background-color: #121212; /* fondo oscuro */
+    color: #00c896; /* letras verdes */
+    border: 2px solid #00c896;
+}
+
+/* Links del navbar centrados con fuente Roboto */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2em;
+    margin:  auto;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #f0f0f0;
+    font-family: 'Roboto', sans-serif;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #00c896;
+}
+
+.carrito {
+    font-size: 2em;
+    text-decoration: none;
+    color: #f0f0f0;
+}
+
+.barra-buscador {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: 1em auto;
+    width: 20em;
+    padding: 1em;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color:#1e1e1e;
+    color: #f0f0f0;
+}
+
+/* Imagen hero */
+.ImageH {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: brightness(90%);
+}
+
+.pasos-inscripcion {
+  text-align: center;
+  padding: 1em 2em;
+}
+
+.pasos-inscripcion h2 {
+    margin-top: 1em;
+ margin-bottom: 2em;
+  font-size: 2em;
+  color: #f0f0f0;
+}
+
+.pasos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  flex-wrap: nowrap; /* evita que se apilen */
+}
+
+.paso img {
+  max-width: 35em;
+  height: auto;
+  display: block;
+}
+
+.separador {
+  font-size: 2em;
+  color: #00c896;
+  padding: 0em 0,5em;
+}
+
+.cursos-destacados {
+  padding: 5em;
+  text-align: center;
+}
+
+.cursos-destacados h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: #f0f0f0;
+}
+
+.grid-cursos {
+    padding: 1em;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* ✅ fuerza 3 columnas */
+  gap: 1em;
+  padding: 2em;
+  max-width: 100%;
+  margin: 0em auto;
+}
+
+
+.curso {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  padding: 1em;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 3em;
+  transition: transform 0.3s;
+}
+
+.curso:hover {
+  transform: scale(1.03);
+}
+
+.curso img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1em;
+}
+
+.curso h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.curso p {
+  margin: 1em;
+  font-size: 1em;
+  font-family: 'Roboto', sans-serif;
+}
+
+.botones {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin-top: 1em;
+  flex-wrap: wrap;
+}
+
+.botones button {
+  padding: 1em 1em;
+  border: none;
+  border-radius: 6px;
+  font-weight: normal;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  min-width: 100px;
+}
+
+.detalle {
+  background-color: #00c896;
+  color: #fff;
+}
+
+.detalle:hover {
+  background-color: #009e7a;
+}
+
+.comprar {
+  background-color: #fff;
+  color: #00c896;
+}
+
+.comprar:hover {
+  background-color: #00c896;
+  color: #fff;
+}
+
+.medios-pago h2{
+    font-size: 2em;
+}
+
+.logos-pago{
+padding: 1em;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* ✅ fuerza 3 columnas */
+  gap: 1em;
+  padding: 1em;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.logos-pago img{
+     width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1em;
+  opacity: 80%;
+}
+
+
+
+
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: normal;
+    background-color: #1e1e1e;
+    color: white;
+    padding: 2em 1em;
+    flex-wrap: wrap;
+}
+
+.footer h3 {
+    margin-bottom: 1em;
+    font-size: 1,5em;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer li {
+    margin-bottom: 0,9em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-redes img {
+    width: 2em;
+    margin-right: 1em;
+    transition: transform 0.3s;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer-redes img:hover {
+    transform: scale(1.2);
+}
+
+/* Responsive footer */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer > div {
+        margin-bottom: 2em;
+    }
+}
+
+.contacto {
+  display: flex;
+  flex-direction: row;
+  align-items:first baseline;
+  margin-top: 40px;
+  color: #00c896;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.mapa {
+    display: flex;
+    justify-content: center;
+    
+}
+iframe{
+    border-radius: 10px;
+    margin: 25px;
+
+   
+}
+
+textarea {
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+input {
+    margin-top: 3px;
+}
+
+p {
+    margin-top: 3px;;
+}
+
+.cursojava{
+  background-color: #009e7a;
+  display: flex;
+}
