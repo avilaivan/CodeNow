@@ -75,178 +75,21 @@ body {
     color: #f0f0f0;
 }
 
-.barra-buscador {
-    font-family: 'Roboto', sans-serif;
-    display: flex;
-    justify-content: center;
-    margin: 1em auto;
-    width: 20em;
-    padding: 1em;
-    border-radius: 5px;
-    border: 1px solid #444;
-    background-color:#1e1e1e;
-    color: #f0f0f0;
-}
 
-/* Imagen hero */
-.ImageH {
-    width: 100%;
-    height: auto;
-    display: block;
-    filter: brightness(90%);
-}
-
-.pasos-inscripcion {
-  text-align: center;
-  padding: 1em 2em;
-}
-
-.pasos-inscripcion h2 {
-    margin-top: 1em;
- margin-bottom: 2em;
-  font-size: 2em;
-  color: #f0f0f0;
-}
-
-.pasos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1em;
-  flex-wrap: nowrap; /* evita que se apilen */
-}
-
-.paso img {
-  max-width: 35em;
-  height: auto;
-  display: block;
-}
-
-.separador {
-  font-size: 2em;
-  color: #00c896;
-  padding: 0em 0,5em;
-}
-
-.cursos-destacados {
-  padding: 5em;
-  text-align: center;
-}
-
-.cursos-destacados h2 {
-  font-size: 2em;
-  margin-bottom: 30px;
-  color: #f0f0f0;
-}
-
-.grid-cursos {
-    padding: 1em;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr); /* ✅ fuerza 3 columnas */
-  gap: 1em;
-  padding: 2em;
-  max-width: 100%;
-  margin: 0em auto;
-}
-
-
-.curso {
-  background-color: #1e1e1e;
-  color: #f0f0f0;
-  padding: 1em;
-  border-radius: 10px;
-  text-align: center;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  display: flex;
+@media (max-width: 768px) {
+.navbar {
   flex-direction: column;
+
+}
+
+.nav-links {
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 20px;
   align-items: center;
-  justify-content: space-between;
-  min-height: 3em;
-  transition: transform 0.3s;
 }
 
-.curso:hover {
-  transform: scale(1.03);
 }
-
-.curso img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 1em;
-}
-
-.curso h3 {
-  font-size: 1.5em;
-  margin-bottom: 10px;
-}
-
-.curso p {
-  margin: 1em;
-  font-size: 1em;
-  font-family: 'Roboto', sans-serif;
-}
-
-.botones {
-  display: flex;
-  justify-content: center;
-  gap: 1em;
-  margin-top: 1em;
-  flex-wrap: wrap;
-}
-
-.botones button {
-  padding: 1em 1em;
-  border: none;
-  border-radius: 6px;
-  font-weight: normal;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  min-width: 100px;
-}
-
-.detalle {
-  background-color: #00c896;
-  color: #fff;
-}
-
-.detalle:hover {
-  background-color: #009e7a;
-}
-
-.comprar {
-  background-color: #fff;
-  color: #00c896;
-}
-
-.comprar:hover {
-  background-color: #00c896;
-  color: #fff;
-}
-
-.medios-pago h2{
-    font-size: 2em;
-}
-
-.logos-pago{
-padding: 1em;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr); /* ✅ fuerza 3 columnas */
-  gap: 1em;
-  padding: 1em;
-  max-width: 80%;
-  margin: 0 auto;
-}
-
-.logos-pago img{
-     width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 1em;
-  opacity: 80%;
-}
-
-
 
 
 
@@ -308,33 +151,40 @@ padding: 1em;
     .footer > div {
         margin-bottom: 2em;
     }
-}
+
+   }
 
 .contacto {
   display: flex;
   flex-direction: row;
-  align-items:first baseline;
   margin-top: 40px;
   color: #00c896;
   justify-content: center;
   align-items: stretch;
 }
 
+
+
+form input,textarea {
+  width: 80%;           /* ocupar todo el ancho */
+  
+}
+
 .mapa {
     display: flex;
     justify-content: center;
-    
 }
 iframe{
     border-radius: 10px;
     margin: 25px;
-
-   
+    
+     
 }
 
 textarea {
     border-radius: 10px;
     margin-top: 5px;
+    
 }
 
 input {
@@ -345,3 +195,46 @@ p {
     margin-top: 3px;;
 }
 
+.btn-submit:hover {
+    background-color: #121212; /* fondo oscuro */
+    color: #00c896; /* letras verdes */
+    border: 2px solid #00c896;
+    border-radius: 3px;
+    
+}
+
+.btn-submit {
+    background-color: #00c896; /* fondo oscuro */
+    color: white; /* letras verdes */
+    border: 2px solid #00c896;
+    border-radius: 3px;
+    width: 8em;
+    height: 3em;
+}
+
+.msj {
+  padding: 10px;
+}
+
+
+
+@media (max-width: 768px) {
+.contacto {
+  flex-direction: column;
+  
+}
+.contacto1 {
+  text-align: center;
+}
+
+.contacto2 {
+  padding-top: 20px;
+  text-align: center;
+}
+
+form input,textarea {
+  width: 90%;           /* ocupar todo el ancho */
+  
+}
+
+}
