@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <title>CodeNow | Cursos de Programación y Capacitaciones Online</title>
+    
+    
+    <link rel="shortcut icon" href="../media/FAVICON-2.png" type="image/x-icon" />
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+   
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+     <header>
+  
+        
+            <nav class="navbar">
+           
+          
+            <a href="../index.html" class="logo-btn">CodeNow</a>
+
+            
+                <ul class="nav-links">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../paginas/cursos.html">Cursos</a></li>
+                <li><a href="../paginas/calendario.html">Calendario</a></li>
+                <li><a href="../paginas/giftcard.html">Gift Card</a></li>
+                <li><a href="../paginas/formulario.html">Inscripción</a></li>
+                <li><a href="../paginas/contacto.html">Contacto</a></li>
+
+            </ul>
+            
+            
+
+           <a href="../index.html" class="carrito" aria-label="Ir al carrito">
+             &#x1F6D2;
+            <span class="contador">3</span>
+            </a>
+
+
+
+          
+        </nav>
+
+        <input class="barra-buscador" list="cursos" name="curso" id="curso" placeholder="Buscar curso">
+
+        <datalist id="cursos">
+            <option value="Python">
+            <option value="Java">
+            <option value="JavaScript">
+            <option value="HTML y CSS">
+            <option value="React">
+            <option value="Node.js">
+            <option value="C++">
+            <option value="SQL">
+            <option value="Git y GitHub">
+            <option value="TypeScript">
+        </datalist>
+       
+    </header>
+
+    <main>
+      <section class="formulario-giftcard">
+
+        <div class="imagen-con-monto">
+          <span class="monto">$1000</span>
+
+          <img src="../media/GIFTCARD.png" alt="giftcard">
+
+
+
+        </div>  
+        <div class="card-form">
+        <h1>Personalización de Tarjeta</h1>
+
+        <form>
+            <div class="field-group">
+                <label for="nombre"></label>
+                <input type="text" id="nombre" placeholder="Escribe un nombre">
+            </div>
+
+            <div class="field-group">
+                <label>Color</label>
+                <div class="fotitos-ubicacion">
+                 <img src="../media/COLOR1.png" alt="">
+                  <img src="../media/COLOR2.png" alt="">
+                 <img src="../media/COLOR3.png" alt="">
+                </div>
+                <div class="options-container">
+                    <input type="radio" id="c1" name="color" value="red" checked>
+                    <label for="c1" class="color-option c-red"></label>
+
+                    <input type="radio" id="c2" name="color" value="blue">
+                    <label for="c2" class="color-option c-blue"></label>
+
+                    <input type="radio" id="c3" name="color" value="green">
+                    <label for="c3" class="color-option c-green"></label>
+                </div>
+            </div>
+
+            <div class="field-group">
+                <label>Tamaño de fuente</label>
+                <div class="options-container text-options">
+                    <input type="radio" id="s1" name="size" value="20px">
+                    <label for="s1">20px</label>
+
+                    <input type="radio" id="s2" name="size" value="28px" checked>
+                    <label for="s2">28px</label>
+
+                    <input type="radio" id="s3" name="size" value="32px">
+                    <label for="s3">32px</label>
+                </div>
+            </div>
+
+            <div class="field-group">
+              <label for="monto">Monto $</label>
+              <input type="text" id="monto" name="valor" placeholder="Escribe el monto">
+            </div>
+
+            <div class="field-group">
+              <label for="ubi1">Ubicacion</label>
+              <div class="fotitos-ubicacion">
+                <img src="../media/CUADRADO 1.png" alt="">
+                <img src="../media/CUADRADO 2.png" alt="">
+                <img src="../media/CUADRADO 3.png" alt="">
+              <div class="options-container" >
+                <input type="radio" name="locacion" id="ubi1">
+
+                <label for="ubi2"></label>
+                <input type="radio" name="locacion" id="ubi2">
+
+                <label for="ubi3"></label>
+                <input type="radio" name="locacion" id="ubi3">
+              </div >
+
+            </div>
+
+            <div class="field-group">
+              <label for="fondo1">Fondo</label>
+              <div class="fotitos-fondo">
+                <img src="../media/CUADRADO B.png" alt="">
+                <img src="../media/CUADRADO B.png" alt="">
+                <img src="../media/CUADRADO B.png" alt="">
+             <div class="options-container">
+              <input type="radio" name="fondo" id="fondo1">
+
+                <label for="fondo2"></label>
+                <input type="radio" name="fondo" id="fondo2">
+
+                <label for="fondo3"></label>
+                <input type="radio" name="fondo" id="fondo3">
+              </div>
+
+            </div>
+
+            <button type="submit" class="logo-btn">CONFIRMAR</button>
+        </form>
+    </div>
+
+      </section>
+
+    </main>
+
+
+
+
+
+
+     <footer class="footer">
+  <div class="footer-integrantes">
+    <h3>Integrantes</h3>
+    <ul>
+      <li>Cristian</li>
+      <li>Gabriel</li>
+      <li>Valentín</li>
+      <li>Iván</li>
+    </ul>
+  </div>
+
+  <div class="footer-menu">
+    <h3>Menú</h3>
+    <ul>
+    <li>        <a href="../index.html">Inicio</a></li>
+                <li><a href="../paginas/cursos.html">Cursos</a></li>
+                <li><a href="../paginas/calendario.html">Calendario</a></li>
+                <li><a href="../paginas/giftcard.html">Gift Card</a></li>
+                <li><a href="../paginas/formulario.html">Inscripción</a></li>
+                <li><a href="../paginas/contacto.html">Contacto</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="footer-redes">
+    <h3>Redes</h3>
+    <div class="iconos-redes">
+      <a href="#"><img src="../media/facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="../media/instagram.png" alt="Instagram"></a>
+      <a href="#"><img src="../media/twitter.png" alt="Twitter"></a>
+    </div>
+  </div>
+</footer>
+    
+</body>
+</html>
+
