@@ -34,7 +34,7 @@ body {
 
 .logo-btn {
     padding: 0.8em;
-    background-color: #00c896;
+    background-color: #00c896; 
     color: #fff;
     font-weight: bold;
     font-size: 20px;
@@ -45,7 +45,7 @@ body {
 }
 
 .logo-btn:hover {
-    background-color: #121212; 
+    background-color: #121212;
     color: #00c896; 
     border: 2px solid #00c896;
 }
@@ -75,6 +75,9 @@ body {
     color: #f0f0f0;
 }
 
+.menu-oculto {
+    display: none;
+}
 
 @media (max-width: 768px) {
 .navbar {
@@ -141,7 +144,17 @@ body {
 }
 
 
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 
+    .footer > div {
+        margin-bottom: 2em;
+    }
+}
 
 .contacto {
   display: flex;
@@ -151,18 +164,22 @@ body {
   color: #00c896;
   justify-content: center;
   align-items: stretch;
+  
+}
+
+.contacto1 {
+    flex-grow: 0.5;
 }
 
 
-
 form input,textarea {
-  width: 80%;           
-  
+  width: 80%;          
 }
 
 .mapa {
     display: flex;
     justify-content: center;
+    
 }
 iframe{
     border-radius: 10px;
@@ -222,9 +239,41 @@ p {
 }
 
 form input,textarea {
-  width: 90%;           
+  width: 90%;          
   
-    }
+}
+
+iframe{
+   width: 90%;
+}
+
+.menu-oculto {
+    display: block;
+}
+
+}
+
+
+
+@media (max-width: 768px) {
+.navbar {
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+.nav-links {
+
+  display: none;  
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  align-items: center;
+}
+
+.carrito {
+   /* display: none;*/
+}
 
 }
 

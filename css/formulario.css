@@ -18,16 +18,15 @@
 body {
     height: 100vh;
     position: relative;
-    background-color: #272727; 
-    color: #f0f0f0; 
+    background-color: #272727;
+    color: #f0f0f0;
 }
-
 
 .navbar {
     display: flex;
     align-items: center;
     padding: 1em 2em;
-    background-color: #1e1e1e; 
+    background-color: #1e1e1e;
     box-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
 
@@ -69,10 +68,15 @@ body {
     color: #00c896;
 }
 
+
 .carrito {
     font-size: 2em;
     text-decoration: none;
     color: #f0f0f0;
+}
+
+.menu-oculto {
+    display: none;
 }
 
 .barra-buscador {
@@ -89,13 +93,14 @@ body {
 }
 
 section {
-     color: #00c896;
+     color: #00c896; 
      margin: 20px;
      
 }
 
 .usuario{
     margin: 20px;
+    
 }
 
 .total{
@@ -110,7 +115,7 @@ input {
 }
 
 .btn-submit {
-    background-color: #00c896;
+    background-color: #00c896; 
     color: white; 
     border: 2px solid #00c896;
     border-radius: 3px;
@@ -139,6 +144,7 @@ input {
     color: white;
     padding: 2em 1em;
     flex-wrap: wrap;
+  
 }
 
 .footer h3 {
@@ -210,6 +216,8 @@ input {
     flex-direction: column;
     align-items: center;
 }
+
+
 }
 
 @media (max-width: 768px) {
@@ -227,7 +235,11 @@ input {
   padding-bottom: 20px;
   align-items: center;
 }
-    
+
+.carrito {
+    /* display: none; */
+}
+
 .titulo {
     text-align: center;
     margin-top: 20px;;
@@ -237,5 +249,10 @@ label {
     margin-top: 5px;
     margin-bottom: 5px;
 }
+
+.menu-oculto {
+    display: block;
+}
+
 
 }
