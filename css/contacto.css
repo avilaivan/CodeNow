@@ -76,7 +76,20 @@ body {
 }
 
 
+@media (max-width: 768px) {
+.navbar {
+  flex-direction: column;
 
+}
+
+.nav-links {
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  align-items: center;
+}
+
+}
 
 
 
@@ -138,12 +151,12 @@ body {
     .footer > div {
         margin-bottom: 2em;
     }
-
-   }
+}
 
 .contacto {
   display: flex;
   flex-direction: row;
+  align-items:first baseline;
   margin-top: 40px;
   color: #00c896;
   justify-content: center;
@@ -164,14 +177,13 @@ form input,textarea {
 iframe{
     border-radius: 10px;
     margin: 25px;
-    
-     
+
+   
 }
 
 textarea {
     border-radius: 10px;
     margin-top: 5px;
-    
 }
 
 input {
@@ -222,6 +234,27 @@ p {
 form input,textarea {
   width: 90%;           /* ocupar todo el ancho */
   
+}
+
+}
+
+@media (max-width: 768px) {
+.navbar {
+  flex-direction: column;
+
+}
+
+.nav-links {
+
+  display: none;  
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  align-items: center;
+}
+
+.carrito {
+    display: none;
 }
 
 }

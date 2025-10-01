@@ -115,6 +115,11 @@ body {
   gap: 1em;
   flex-wrap: nowrap; /* evita que se apilen */
 }
+.pasos p{
+  font-family: 'Roboto', sans-serif;
+  width: 70em;
+  font-size: 1.2em;
+}
 
 .paso img {
   max-width: 35em;
@@ -143,6 +148,15 @@ body {
     padding: 1em;
   display: grid;
   grid-template-columns: repeat(6, 1fr); /* ✅ fuerza 3 columnas */
+  gap: 1em;
+  padding: 2em;
+  max-width: 100%;
+  margin: 0em auto;
+}
+.grid-cursos-detalle {
+  padding: 1em;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* ✅ fuerza 3 columnas */
   gap: 1em;
   padding: 2em;
   max-width: 100%;
@@ -309,4 +323,92 @@ padding: 1em;
         margin-bottom: 2em;
     }
 }
+
+.java-c {
+  padding: 2%;
+  margin: 3em;
+  width: 80em;
+  display: flex;
+  justify-content:flex-start;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  border-radius: 10px;
+}
+
+
+.java-c img{
+  width: 20em;
+}
+.java-c p{
+   font-family: 'Roboto', sans-serif;
+}
+
+.curso-text p {
+ margin-top: 1em;
+  margin-bottom: 1em;
+}
+.curso-text h2{
+  font-size: 3em;
+}
+
+.curso-text a.logo-btn {
+  display: inline-block;
+  margin-top: 0,5em;
+}
+
+.java-c img{
+  border-radius: 10px;
+}
+
+.curso-text{
+  margin-left: 3em;
+}
+
+.horas-reproduccion img{
+  width: 2em;
+}
+.contador-horas{
+  font-size: 2em;
+}
+.contenedor-profesor{
+  background-color: #383838;
+  width: 100%;
+  justify-content: center;
+}
+
+.profesor{
+  padding: 2%;
+  margin: 3em;
+  width: 110em;
+  display: flex;
+  justify-content:center;
+  
+}
+.profesor-img{
+  width:20em;
+  border-radius: 200px;
+}
+
+.profesor-descripccion{
+  padding: 2%;
+  margin-left: 3em;
+  width: 100%;
+  
+  display: flex;
+  flex-direction: column;
+}
+.profesor-descripccion img{
+  width: 10em;
+}
+
+.profesor-descripccion p{
+  margin-top: 10px;
+  font-size: 2em;
+  font-family: 'Roboto', sans-serif;
+}
+.profesor-descripccion h2{
+  
+  font-size: 2em;
+  
+}
+
 
