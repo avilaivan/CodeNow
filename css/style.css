@@ -560,3 +560,18 @@ padding: 1em;
     background-color: rgba(48, 105, 152, 0.2);
     border: 1px solid #306998;
 }
+
+@media screen and (max-width: 40em) { 
+    
+    .calendario-grid-dias {
+        width: 60em; 
+    }
+    
+    .dias-semana-grid {
+        width: 60em;
+    }
+    
+    .calendario-section {
+        padding: 0;
+    }
+}
