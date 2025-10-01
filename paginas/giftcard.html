@@ -68,7 +68,97 @@
        
     </header>
 
+    <main>
+      <section class="formulario-giftcard">
 
+        <div class="foto-giftcard">
+          <h2>$1000</h2>
+          <img src="../media/GIFTCARD.png" alt="giftcard">
+
+
+
+        </div>  
+        <div class="card-form">
+        <h1>Personalización de Tarjeta</h1>
+
+        <form>
+            <div class="field-group">
+                <label for="nombre"></label>
+                <input type="text" id="nombre" placeholder="Escribe un nombre">
+            </div>
+
+            <div class="field-group">
+                <label>Color</label>
+                <div class="options-container">
+                    <input type="radio" id="c1" name="color" value="red" checked>
+                    <label for="c1" class="color-option c-red"></label>
+
+                    <input type="radio" id="c2" name="color" value="blue">
+                    <label for="c2" class="color-option c-blue"></label>
+
+                    <input type="radio" id="c3" name="color" value="green">
+                    <label for="c3" class="color-option c-green"></label>
+                </div>
+            </div>
+
+            <div class="field-group">
+                <label>Tamaño de fuente</label>
+                <div class="options-container text-options">
+                    <input type="radio" id="s1" name="size" value="20px">
+                    <label for="s1">20px</label>
+
+                    <input type="radio" id="s2" name="size" value="28px" checked>
+                    <label for="s2">28px</label>
+
+                    <input type="radio" id="s3" name="size" value="32px">
+                    <label for="s3">32px</label>
+                </div>
+            </div>
+
+            <div class="field-group">
+              <label for="monto">Monto $</label>
+              <input type="text" id="monto" name="valor">
+            </div>
+
+            <div class="field-group">
+              <label for="ubi1">Ubicacion</label>
+              <div class="fotitos-ubicacion">
+                <img src="../media/CUADRADO_1.png" alt="">
+                <img src="../media/CUADRADO_2.png" alt="">
+                <img src="../media/CUADRADO_3.png" alt="">
+              </div>
+                <input type="radio" name="locacion" id="ubi1">
+
+                <label for="ubi2"></label>
+                <input type="radio" name="locacion" id="ubi2">
+
+                <label for="ubi3"></label>
+                <input type="radio" name="locacion" id="ubi3">
+            </div>
+
+            <div class="field-group">
+              <label for="fondo1">Fondo</label>
+              <div class="fotitos-fondo">
+                <img src="../media/CUADRADO_B.png" alt="">
+                <img src="../media/CUADRADO_B.png" alt="">
+                <img src="../media/CUADRADO_B.png" alt="">
+              </div>
+              <input type="radio" name="fondo" id="fondo1">
+
+                <label for="fondo2"></label>
+                <input type="radio" name="fondo" id="fondo2">
+
+                <label for="fondo3"></label>
+                <input type="radio" name="fondo" id="fondo3">
+            </div>
+
+            <button type="submit" class="confirm-button">CONFIRMAR</button>
+        </form>
+    </div>
+
+      </section>
+
+    </main>
 
 
 
