@@ -311,19 +311,6 @@ padding: 1em;
     transform: scale(1.2);
 }
 
-/* Responsive footer */
-@media (max-width: 768px) {
-    .footer {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .footer > div {
-        margin-bottom: 2em;
-    }
-}
-
 .java-c {
   padding: 2%;
   margin: 3em;
@@ -413,11 +400,15 @@ padding: 1em;
 
 .formulario-giftcard{
   display: flex;
-  background-color: #009e7a;
+ 
   justify-content: center;
   align-items: center;
 }
 
+.formulario-giftcard{
+  margin-top: 5em;
+  margin-bottom: 10em;
+}
 
 .field-group img{
   width: 2em;
@@ -426,6 +417,7 @@ padding: 1em;
 
 
 .card-form{
+  font-family: 'Roboto', sans-serif; 
   margin-left: 2em;
 }
 
@@ -434,3 +426,33 @@ padding: 1em;
   margin-top: 5em;
 
 }
+.field-group{
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 1em;
+}
+
+
+
+.imagen-con-monto {
+  position: relative;
+  width: 28em;
+  height: auto;
+  display: inline-block;
+}
+
+.imagen-con-monto img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.monto {
+  position: absolute;
+ 
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 0.3em 0.6em;
+  font-size: 2em;
+  font-weight: bold;
+}
+
