@@ -75,6 +75,9 @@ body {
     color: #f0f0f0;
 }
 
+.menu-oculto {
+    display: none;
+}
 
 @media (max-width: 768px) {
 .navbar {
@@ -161,8 +164,12 @@ body {
   color: #00c896;
   justify-content: center;
   align-items: stretch;
+  
 }
 
+.contacto1 {
+    flex-grow: 0.5;
+}
 
 
 form input,textarea {
@@ -173,6 +180,7 @@ form input,textarea {
 .mapa {
     display: flex;
     justify-content: center;
+    
 }
 iframe{
     border-radius: 10px;
@@ -234,6 +242,14 @@ p {
 form input,textarea {
   width: 90%;           /* ocupar todo el ancho */
   
+}
+
+iframe{
+   width: 90%;
+}
+
+.menu-oculto {
+    display: block;
 }
 
 }
