@@ -411,4 +411,26 @@ padding: 1em;
   
 }
 
+.formulario-giftcard{
+  display: flex;
+  background-color: #009e7a;
+  justify-content: center;
+  align-items: center;
+}
 
+
+.field-group img{
+  width: 2em;
+
+}
+
+
+.card-form{
+  margin-left: 2em;
+}
+
+
+.card-form h2{  
+  margin-top: 5em;
+
+}
