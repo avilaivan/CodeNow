@@ -1,4 +1,3 @@
-/* Fuente principal local */
 @font-face {
     font-family: 'MiFuente';
     src: url('../font/NewakeFont-Demo.otf') format('truetype');
@@ -7,7 +6,6 @@
 }
 
 
-/* Reset y tipografía global */
 * {
     margin: 0;
     padding: 0;
@@ -18,23 +16,23 @@
 body {
     height: 100vh;
     position: relative;
-    background-color: #272727; /* modo oscuro */
-    color: #f0f0f0; /* texto claro */
+    background-color: #272727; 
+    color: #f0f0f0; 
 }
 
-/* Navbar */
+
 .navbar {
     display: flex;
     align-items: center;
     padding: 1em 2em;
-    background-color: #1e1e1e; /* fondo oscuro */
+    background-color: #1e1e1e; 
     box-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
 
-/* Logo botón a la izquierda */
+
 .logo-btn {
     padding: 0.8em;
-    background-color: #00c896; /* verde */
+    background-color: #00c896; 
     color: #fff;
     font-weight: bold;
     font-size: 20px;
@@ -45,12 +43,12 @@ body {
 }
 
 .logo-btn:hover {
-    background-color: #121212; /* fondo oscuro */
-    color: #00c896; /* letras verdes */
+    background-color: #121212; 
+    color: #00c896; 
     border: 2px solid #00c896;
 }
 
-/* Links del navbar centrados con fuente Roboto */
+
 .nav-links {
     list-style: none;
     display: flex;
@@ -88,7 +86,6 @@ body {
     color: #f0f0f0;
 }
 
-/* Imagen hero */
 .ImageH {
     width: 100%;
     height: auto;
@@ -113,7 +110,9 @@ body {
   justify-content: center;
   align-items: center;
   gap: 1em;
-  flex-wrap: nowrap; /* evita que se apilen */
+  flex-wrap: wrap; 
+ 
+
 }
 .pasos p{
   font-family: 'Roboto', sans-serif;
@@ -122,16 +121,18 @@ body {
 }
 
 .paso img {
-  max-width: 35em;
+  width: 100%;
+  max-width: 32em;
   height: auto;
-  display: block;
+  margin: 0 auto;
 }
 
 .separador {
   font-size: 2em;
   color: #00c896;
-  padding: 0em 0,5em;
+  
 }
+
 
 .cursos-destacados {
   padding: 5em;
@@ -147,7 +148,7 @@ body {
 .grid-cursos {
     padding: 1em;
   display: grid;
-  grid-template-columns: repeat(6, 1fr); /* ✅ fuerza 3 columnas */
+  grid-template-columns: repeat(6, 1fr); 
   gap: 1em;
   padding: 2em;
   max-width: 100%;
@@ -156,7 +157,7 @@ body {
 .grid-cursos-detalle {
   padding: 1em;
   display: grid;
-  grid-template-columns: repeat(5, 1fr); /* ✅ fuerza 3 columnas */
+  grid-template-columns: repeat(5, 1fr); 
   gap: 1em;
   padding: 2em;
   max-width: 100%;
@@ -245,7 +246,7 @@ body {
 .logos-pago{
 padding: 1em;
   display: grid;
-  grid-template-columns: repeat(5, 1fr); /* ✅ fuerza 3 columnas */
+  grid-template-columns: repeat(5, 1fr); 
   gap: 1em;
   padding: 1em;
   max-width: 80%;
@@ -435,7 +436,7 @@ padding: 1em;
 
 .imagen-con-monto {
   position: relative;
-  width: 28em;
+  width: 32em;
   height: auto;
   display: inline-block;
 }
@@ -455,124 +456,685 @@ padding: 1em;
   font-size: 2em;
   font-weight: bold;
 }
-
 .calendario-section {
+
+
+
     padding: 3em 1em;
+
+
     max-width: 60em; 
+
+
     margin: 0 auto;
+
+
 }
+
+
+
+
 
 .calendario-titulo {
+
+
     text-align: center;
+
+
     margin-bottom: 1.5em;
+
+
     font-size: 2em; 
+
+
 }
+
+
+
+
 
 .dias-semana-grid {
+
+
     display: grid;
+
+
     grid-template-columns: repeat(7, 1fr); 
+
+
     text-align: center;
+
+
     background-color: #00c896; 
+
+
     color: #1e1e1e; 
+
+
     font-weight: bold;
+
+
     padding: 0.5em 0;
+
+
     border-radius: 6px 6px 0 0;
+
+
     font-size: 1.1em; 
+
+
 }
+
+
+
+
 
 .dias-semana-grid span {
+
+
     padding: 0.5em 0;
+
+
     font-family: 'Roboto', sans-serif;
+
+
 }
+
+
+
+
 
 .calendario-grid-dias {
+
+
     display: grid;
+
+
     grid-template-columns: repeat(7, 1fr); 
+
+
     border-left: 1px solid #444; 
+
+
     border-bottom: 1px solid #444;
+
+
 }
+
+
+
+
 
 .dia-calendario {
+
+
     display: flex;
+
+
     flex-direction: column;
+
+
     padding: 0.5em;
+
+
     padding-bottom: 3.5em; 
+
+
     border-top: 1px solid #444;
+
+
     border-right: 1px solid #444;
+
+
     font-size: 0.9em;
+
+
     text-align: left;
+
+
     overflow: hidden; 
+
+
 }
+
+
+
+
 
 .dia-vacio {
+
+
     padding-top: 0.8em; 
+
+
     padding-bottom: 3.5em;
+
+
     background-color: #383838; 
+
+
     border-top: 1px solid #444;
+
+
     border-right: 1px solid #444;
+
+
 }
+
+
+
+
 
 .numero-dia {
+
+
     font-weight: 500;
+
+
     margin-bottom: 0.2em;
+
+
     font-family: 'Roboto', sans-serif;
+
+
     color: #f0f0f0;
+
+
 }
+
+
+
+
 
 .dia-calendario.evento {
+
+
     background-color: #1e1e1e;
+
+
     border: 1px solid #00c896; 
+
+
     box-shadow: 0 0 5px rgba(0, 200, 150, 0.4); 
+    
+
     text-decoration: none; 
+
 }
+
+
+
+
 
 .dia-calendario.evento.curso-java .evento-nombre {
+
+
     color: #ff9900; 
+
+
     background-color: rgba(255, 153, 0, 0.2); 
+
+
     border: 1px solid #ff9900;
+
+
 }
+
+
+
+
 
 .dia-calendario.evento.curso-html .evento-nombre {
+
+
     color: #e34f26; 
+
+
     background-color: rgba(227, 79, 38, 0.2);
+
+
     border: 1px solid #e34f26;
+
+
 }
+
+
+
+
 
 .dia-calendario.evento.curso-css .evento-nombre {
+
+
     color: #264de4;
+
+
     background-color: rgba(38, 77, 228, 0.2);
+
+
     border: 1px solid #264de4;
+
+
 }
+
+
+
+
 
 .dia-calendario.evento.curso-js .evento-nombre {
+
+
     color: #f7df1e; 
+
+
     background-color: rgba(247, 223, 30, 0.2);
+
+
     border: 1px solid #f7df1e;
+
+
 }
+
+
+
+
 
 .dia-calendario.evento.curso-cplus .evento-nombre {
+
+
     color: #5d9ddc;
+
+
     background-color: rgba(93, 157, 220, 0.2);
+
+
     border: 1px solid #5d9ddc;
+
+
 }
+
+
+
+
 
 .dia-calendario.evento.curso-python .evento-nombre {
+
+
     color: #306998;
+
+
     background-color: rgba(48, 105, 152, 0.2);
+
+
     border: 1px solid #306998;
+
+
 }
 
-@media screen and (max-width: 40em) { 
-    
-    .calendario-grid-dias {
-        width: 60em; 
+@media (max-width: 768px) {
+.navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    gap: 1em;
+  }
+
+  .logo-btn {
+    font-size: 1.2em;
+    padding: 0.8em 1.5em;
+    text-align: center;
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+
+.nav-links {
+
+  display: none;  
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  align-items: center;
+}
+}
+@media screen and (max-width: 768px) {
+  .pasos-inscripcion .pasos {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+  @media screen and (max-width: 768px) {
+  .cursos-destacados {
+    padding: 2em 1em;
+    text-align: center;
+  }
+
+  .grid-cursos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .grid-cursos-detalle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .curso {
+    width: 95%;
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 1.5em;
+    box-sizing: border-box;
+  }
+
+  .curso img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .curso h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .curso p {
+    font-size: 1em;
+    margin: 0.5em 0;
+  }
+
+  .botones {
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    margin-top: 1em;
+  }
+
+  .botones button {
+    width: 100%;
+    max-width: 200px;
+    font-size: 1em;
+    padding: 0.8em 1em;
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .logos-pago {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+  }
+
+  .logos-pago img {
+    max-width: 200px;
+    width: 80%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  
+  .java-c {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 2em auto;
+    padding: 1em;
+    box-sizing: border-box;
+  }
+
+  .java-c img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 1em;
+  }
+
+  .curso-text {
+    text-align: center;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .curso-text h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+  }
+
+  .horas-reproduccion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    margin-bottom: 1em;
+  }
+
+  .horas-reproduccion img {
+    width: 2em;
+    height: auto;
+  }
+
+  .contador-horas {
+    font-size: 1.2em;
+  }
+
+  .curso-text p {
+    font-size: 1em;
+    margin: 0.5em 0;
+  }
+
+
+  
+}
+
+
+
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
-    
-    .dias-semana-grid {
-        width: 60em;
-    }
-    
-    .calendario-section {
-        padding: 0;
+
+    .footer > div {
+        margin-bottom: 2em;
     }
 }
+@media screen and (max-width: 768px) {
+  .contenedor-profesor {
+    width: 100%;
+    padding: 1em;
+    box-sizing: border-box;
+  }
+
+  .profesor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+    margin: 2em auto;
+    width: 100%;
+  }
+
+  .profesor-img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 1em;
+  }
+
+  .profesor-descripccion {
+    text-align: center;
+    width: 100%;
+    padding: 0 1em;
+    box-sizing: border-box;
+  }
+
+  .profesor-descripccion h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .profesor-descripccion img {
+    width: 100px;
+    height: auto;
+    margin: 0 auto 1em;
+    display: block;
+  }
+
+  .profesor-descripccion p {
+    font-size: 1em;
+    margin: 0.5em 0;
+    line-height: 1.6;
+    padding: 0 0.5em;
+  }
+}
+@media screen and (max-width: 768px) {
+  .formulario-giftcard {
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+  }
+
+  .imagen-con-monto {
+    text-align: center;
+    width: 100%;
+  }
+
+  .imagen-con-monto img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .monto {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 1em;
+    display: block;
+  }
+
+
+
+  .card-form {
+    width: 100%;
+    max-width: 500px;
+    padding: 1em;
+    box-sizing: border-box;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .field-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+
+  .field-group input[type="text"] {
+    width: 100%;
+    padding: 0.8em;
+    font-size: 1em;
+  }
+
+  .fotitos-ubicacion,
+  .fotitos-fondo {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    flex-wrap: wrap;
+  }
+
+  .fotitos-ubicacion img,
+  .fotitos-fondo img {
+    width: 80px;
+    height: auto;
+  }
+
+  .options-container {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    flex-wrap: wrap;
+  }
+
+  .text-options label {
+    font-size: 1em;
+    padding: 0.5em 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .logo-btn {
+    width: 100%;
+    max-width: 250px;
+    margin: 1em auto 0;
+    padding: 1em;
+    font-size: 1em;
+  }
+
+
+}
+
+@media screen and (max-width: 768px) {
+  .calendario-section {
+    padding: 1em;
+    text-align: center;
+  }
+
+  .calendario-titulo {
+    font-size: 1.4em;
+    margin-bottom: 1em;
+  }
+
+  .dias-semana-grid,
+  .calendario-grid-dias {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.5em;
+  }
+
+  .dia-calendario,
+  .dia-vacio {
+    padding: 0.5em;
+    font-size: 0.9em;
+    background-color: #383838;
+    border-radius: 5px;
+    min-height: 60px;
+  }
+
+  .evento {
+    background-color: #383838;
+    border: 1px solid #0f5132;
+  }
+
+  .evento-nombre {
+    display: block;
+    font-size: 0.7em;
+    margin-top: 0.3em;
+  }
+}
+
