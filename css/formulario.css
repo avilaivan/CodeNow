@@ -1,3 +1,4 @@
+/* Fuente principal local */
 @font-face {
     font-family: 'MiFuente';
     src: url('../font/NewakeFont-Demo.otf') format('truetype');
@@ -6,6 +7,7 @@
 }
 
 
+/* Reset y tipografía global */
 * {
     margin: 0;
     padding: 0;
@@ -16,25 +18,23 @@
 body {
     height: 100vh;
     position: relative;
-    background-color: #272727;
-    color: #f0f0f0;
-}
-.menu-oculto {
-    display: none;
+    background-color: #272727; /* modo oscuro */
+    color: #f0f0f0; /* texto claro */
 }
 
+/* Navbar */
 .navbar {
     display: flex;
     align-items: center;
     padding: 1em 2em;
-    background-color: #1e1e1e;
+    background-color: #1e1e1e; /* fondo oscuro */
     box-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
 
-
+/* Logo botón a la izquierda */
 .logo-btn {
     padding: 0.8em;
-    background-color: #00c896; 
+    background-color: #00c896; /* verde */
     color: #fff;
     font-weight: bold;
     font-size: 20px;
@@ -45,12 +45,12 @@ body {
 }
 
 .logo-btn:hover {
-    background-color: #121212; 
-    color: #00c896; 
+    background-color: #121212; /* fondo oscuro */
+    color: #00c896; /* letras verdes */
     border: 2px solid #00c896;
 }
 
-
+/* Links del navbar centrados con fuente Roboto */
 .nav-links {
     list-style: none;
     display: flex;
@@ -94,7 +94,7 @@ body {
 }
 
 section {
-     color: #00c896; 
+     color: #00c896; /* letras verdes */
      margin: 20px;
      margin-bottom: 10em;
 }
@@ -116,8 +116,8 @@ input {
 }
 
 .btn-submit {
-    background-color: #00c896; 
-    color: white; 
+    background-color: #00c896; /* fondo oscuro */
+    color: white; /* letras verdes */
     border: 2px solid #00c896;
     border-radius: 3px;
     width: 8em;
@@ -128,8 +128,8 @@ input {
 }
 
 .btn-submit:hover {
-    background-color: #121212; 
-    color: #00c896; 
+    background-color: #121212; /* fondo oscuro */
+    color: #00c896; /* letras verdes */
     border: 2px solid #00c896;
     border-radius: 3px;
     
@@ -185,6 +185,7 @@ input {
     transform: scale(1.2);
 }
 
+/* Responsive footer */
 @media (max-width: 768px) {
     .footer {
         flex-direction: column;
@@ -236,6 +237,9 @@ input {
   align-items: center;
 }
 
+.carrito {
+    /* display: none; */
+}
 
 .titulo {
     text-align: center;
