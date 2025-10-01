@@ -238,9 +238,12 @@ form input,textarea {
 
 }
 
+
+
 @media (max-width: 768px) {
 .navbar {
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-around;
 
 }
 
@@ -254,28 +257,7 @@ form input,textarea {
 }
 
 .carrito {
-    display: none;
-}
-
-}
-
-@media (max-width: 768px) {
-.navbar {
-  flex-direction: column;
-
-}
-
-.nav-links {
-
-  display: none;  
-  flex-direction: column;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  align-items: center;
-}
-
-.carrito {
-    display: none;
+   /* display: none;*/
 }
 
 }
