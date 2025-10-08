@@ -95,7 +95,8 @@ body {
 
 /* FORMULARIO centrado y prolijo */
 .form-section {
-  max-width: 30%;
+    max-width: 100%;
+  width: 30%;
   margin: 3em auto;
   padding: 2em;
   background-color: #1e1e1e;
@@ -340,8 +341,9 @@ input[type="text"] {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1220px) {
   .form-section {
+    width: 100%;
     padding: 1em;
     margin: 2em 1em;
   }
