@@ -1,11 +1,9 @@
-
 @font-face {
     font-family: 'MiFuente';
     src: url('../font/NewakeFont-Demo.otf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
-
 
 
 * {
@@ -20,6 +18,7 @@ body {
     position: relative;
     background-color: #272727; 
     color: #f0f0f0; 
+    
 }
 
 
@@ -87,7 +86,6 @@ body {
     background-color:#1e1e1e;
     color: #f0f0f0;
 }
-
 
 .ImageH {
     width: 100%;
@@ -316,13 +314,17 @@ padding: 1em;
 }
 
 .java-c {
-  padding: 2%;
-  margin: 3em;
-  width: 80em;
-  display: flex;
-  justify-content:flex-start;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  border-radius: 10px;
+  
+    
+    margin: 2em;
+    padding: 2%;
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1e1e1e; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    border-radius: 10px;
 }
 
 
@@ -343,7 +345,7 @@ padding: 1em;
 
 .curso-text a.logo-btn {
   display: inline-block;
-  margin-top: 0,5em;
+  margin-top: 0.5em;
 }
 
 .java-c img{
@@ -360,6 +362,89 @@ padding: 1em;
 .contador-horas{
   font-size: 2em;
 }
+.curso-principal {
+  margin: 1em;
+  display: flex;               
+    align-items: center;     
+    justify-content: center;      
+                        
+                   
+    flex-wrap: wrap;              
+}
+
+
+.contenedor-clases {
+              
+    width: 100%;      
+  background-color: #1e1e1e;  
+    color: #f0f0f0;             
+    padding: 2em;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    max-width: 30%;
+    
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.contenedor-clases h3 {
+    margin-bottom: 1em;
+    font-size: 1.8em;
+    border-bottom: 2px solid #00c896; 
+    padding-bottom: 0.3em;
+}
+
+
+.contenedor-clases details {
+    background-color: #2c2c2c;
+    margin-bottom: 1em;
+    padding: 0.8em 1em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+.contenedor-clases details:hover {
+    background-color: #3a3a3a;
+}
+
+
+.contenedor-clases summary {
+    font-weight: 600;
+    font-size: 1.1em;
+    list-style: none; 
+}
+
+
+.contenedor-clases summary::-webkit-details-marker {
+    display: none; 
+}
+
+.contenedor-clases summary::before {
+    content: "▶"; 
+    display: inline-block;
+    margin-right: 0.5em;
+    transition: transform 0.3s ease;
+}
+
+
+.contenedor-clases details[open] summary::before {
+    transform: rotate(90deg);
+}
+
+
+.contenedor-clases details p {
+    margin: 0.5em 0;
+    font-size: 0.95em;
+    padding-left: 1.5em; 
+    line-height: 1.4;
+}
+
+.contenedor-clases summary,
+.contenedor-clases details p {
+    font-family: 'Roboto', sans-serif;
+}
 .contenedor-profesor{
   background-color: #383838;
   width: 100%;
@@ -368,8 +453,8 @@ padding: 1em;
 
 .profesor{
   padding: 2%;
-  margin: 3em;
-  width: 110em;
+ 
+  width: 100%;
   display: flex;
   justify-content:center;
   
@@ -560,7 +645,7 @@ padding: 1em;
 
 
     border-bottom: 1px solid #444;
-
+    box-shadow: 0 0 10px rgba(0, 200, 150, 0.3);
 
 }
 
@@ -772,6 +857,8 @@ padding: 1em;
 
 
 }
+
+
 
 @media (max-width: 768px) {
 .navbar {
@@ -1141,3 +1228,10 @@ padding: 1em;
   }
 }
 
+@media screen and (max-width: 768px) {
+  .contenedor-clases {
+    max-width: 100%;
+    padding: 1.5em;
+    border-radius: 0; /* Opcional: bordes rectos en móviles */
+  }
+}

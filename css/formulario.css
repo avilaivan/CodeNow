@@ -1,4 +1,4 @@
-
+/* Fuente principal local */
 @font-face {
     font-family: 'MiFuente';
     src: url('../font/NewakeFont-Demo.otf') format('truetype');
@@ -7,7 +7,7 @@
 }
 
 
-
+/* Reset y tipografía global */
 * {
     margin: 0;
     padding: 0;
@@ -18,22 +18,23 @@
 body {
     height: 100vh;
     position: relative;
-    background-color: #272727;
-    color: #f0f0f0;
+    background-color: #272727; /* modo oscuro */
+    color: #f0f0f0; /* texto claro */
 }
 
+/* Navbar */
 .navbar {
     display: flex;
     align-items: center;
     padding: 1em 2em;
-    background-color: #1e1e1e;
+    background-color: #1e1e1e; /* fondo oscuro */
     box-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
 
-
+/* Logo botón a la izquierda */
 .logo-btn {
     padding: 0.8em;
-    background-color: #00c896; 
+    background-color: #00c896; /* verde */
     color: #fff;
     font-weight: bold;
     font-size: 20px;
@@ -44,12 +45,12 @@ body {
 }
 
 .logo-btn:hover {
-    background-color: #121212; 
-    color: #00c896; 
+    background-color: #121212; /* fondo oscuro */
+    color: #00c896; /* letras verdes */
     border: 2px solid #00c896;
 }
 
-
+/* Links del navbar centrados con fuente Roboto */
 .nav-links {
     list-style: none;
     display: flex;
@@ -92,47 +93,136 @@ body {
     color: #f0f0f0;
 }
 
-section {
-     color: #00c896; 
-     margin: 20px;
-     
+/* FORMULARIO centrado y prolijo */
+.form-section {
+  max-width: 30%;
+  margin: 3em auto;
+  padding: 2em;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 200, 150, 0.3);
 }
 
-.usuario{
-    margin: 20px;
-    
+/* Título centrado */
+.titulo {
+  text-align: center;
+  margin-bottom: 2em;
 }
 
-.total{
-    display: flex;
-    flex-direction: row;
-    margin: 10px;;
+.titulo h1 {
+  font-size: 2.5em;
+  color: #00c896;
 }
 
-input {
-    margin-left: 10px;
-    margin-right: 10px;
+.titulo h2 {
+  font-size: 1.5em;
+  color: #f0f0f0;
+}
+
+/* Contenedor del formulario */
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em; /* más compacto */
+}
+
+/* Bloque de cada integrante */
+.integrante {
+  background-color: #272727;
+  padding: 0.8em; /* menos espacio interno */
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 200, 150, 0.2);
+}
+
+.integrante h3 {
+  text-align: center;
+  margin-bottom: 0.8em;
+  color: #00c896;
+}
+
+/* Campos alineados en grid */
+.campos {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 0.3em 0.8em; /* menos espacio entre campos */
+  align-items: center;
+}
+
+label {
+  color: #f0f0f0;
+  text-align: right;
+  
+}
+
+input[type="text"] {
+  padding: 0.4em; /* más compacto */
+  border: 1px solid #444;
+  border-radius: 4px;
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  margin: 0 5px;
+}
+
+/* Botón quitar */
+.quitar {
+  margin-top: 0.5em;
+  align-self: flex-end;
+  background-color: #00c896;
+  color: white;
+  border: none;
+  padding: 0.4em 0.8em;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
+  height: auto;
+}
+
+.quitar:hover {
+  background-color: #121212;
+  color: #00c896;
+  border: 1px solid #00c896;
+}
+
+/* Resumen final */
+.resumen {
+  text-align: center;
+  margin-top: 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.total {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+  font-size: 1em;
+  margin: 0.5em 0;
 }
 
 .btn-submit {
-    background-color: #00c896; 
-    color: white; 
-    border: 2px solid #00c896;
-    border-radius: 3px;
-    width: 8em;
-    height: 3em;
-    margin: 10px;
-    
-    
+  background-color: #00c896;
+  color: white;
+  border: none;
+  padding: 0.6em 1.2em;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: all 0.3s ease;
+  width: 10em;
+  height: auto;
+  margin: 6px;
 }
 
 .btn-submit:hover {
-    background-color: #121212; 
-    color: #00c896; 
-    border: 2px solid #00c896;
-    border-radius: 3px;
-    
+  background-color: #121212;
+  color: #00c896;
+  border: 1px solid #00c896;
 }
+
+
+
 
 
 
@@ -184,7 +274,7 @@ input {
     transform: scale(1.2);
 }
 
-
+/* Responsive footer */
 @media (max-width: 768px) {
     .footer {
         flex-direction: column;
@@ -203,6 +293,7 @@ input {
     display: flex;
     flex-direction: column;
     margin: 20px;
+    
 }
 
 .btn {
@@ -222,10 +313,22 @@ input {
 
 @media (max-width: 768px) {
 .navbar {
-  flex-direction: row;
-  justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    gap: 1em;
+  }
 
-}
+  .logo-btn {
+    font-size: 1.2em;
+    padding: 0.8em 1.5em;
+    text-align: center;
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
 
 .nav-links {
 
@@ -234,25 +337,31 @@ input {
   padding-top: 20px;
   padding-bottom: 20px;
   align-items: center;
+    }
 }
 
-.carrito {
-    /* display: none; */
-}
+@media (max-width: 768px) {
+  .form-section {
+    padding: 1em;
+    margin: 2em 1em;
+  }
 
-.titulo {
-    text-align: center;
-    margin-top: 20px;;
-}
+  .campos {
+    grid-template-columns: 1fr;
+  }
 
-label {
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
+  label {
+    text-align: left;
+  }
 
-.menu-oculto {
-    display: block;
-}
+  .btn-submit,
+  .quitar {
+    width: 100%;
+    margin-top: 0.5em;
+  }
 
-
+  .total {
+    flex-direction: column;
+    align-items: center;
+  }
 }

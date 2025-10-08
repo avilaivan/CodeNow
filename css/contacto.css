@@ -1,11 +1,9 @@
-
 @font-face {
     font-family: 'MiFuente';
     src: url('../font/NewakeFont-Demo.otf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
-
 
 
 * {
@@ -271,9 +269,7 @@ iframe{
   align-items: center;
 }
 
-.carrito {
-   /* display: none;*/
-}
+
 
 }
 
@@ -281,10 +277,22 @@ iframe{
 
 @media (max-width: 768px) {
 .navbar {
-  flex-direction: row;
-  justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    gap: 1em;
+  }
 
-}
+  .logo-btn {
+    font-size: 1.2em;
+    padding: 0.8em 1.5em;
+    text-align: center;
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
 
 .nav-links {
 
@@ -293,9 +301,7 @@ iframe{
   padding-top: 20px;
   padding-bottom: 20px;
   align-items: center;
-    }
 }
-
 
 @media (max-width: 768px) {
     .footer {
@@ -311,3 +317,4 @@ iframe{
 
 
 
+}
