@@ -99,6 +99,19 @@ section {
      margin-bottom: 10em;
 }
 
+.formulario2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-grow:10;
+    
+    
+}
+
+.formulario2 input {
+  
+}
+
 .usuario{
     margin: 20px;
     
@@ -113,6 +126,7 @@ section {
 input {
     margin-left: 10px;
     margin-right: 10px;
+    
 }
 
 .btn-submit {
@@ -125,6 +139,17 @@ input {
     margin: 10px;
     
     
+}
+
+.quitar {
+    background-color: #00c896; /* fondo oscuro */
+    color: white; /* letras verdes */
+    border: 2px solid #00c896;
+    border-radius: 3px;
+    width: 4em;
+    height: 1.5em;
+    
+   
 }
 
 .btn-submit:hover {
@@ -204,6 +229,7 @@ input {
     display: flex;
     flex-direction: column;
     margin: 20px;
+    
 }
 
 .btn {
@@ -260,8 +286,24 @@ input {
 label {
     margin-top: 5px;
     margin-bottom: 5px;
+    width: 100px;
 }
 
+.formulario2 {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+.quitar {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+p{
+    text-align: center;
+}
 
 
 }
